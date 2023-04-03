@@ -5,6 +5,22 @@ Supporting 1 (Dark Coral): #E67B6C
 Supporting 2 (Light Coral): #F2B0A1
 Accent (Sky Blue): #83AAC0
 */
+*{
+    box-sizing: border-box;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:black
+}
 body {
     background-color: #FFFFFF;
     font-family: 'Epilogue', sans-serif;
@@ -12,6 +28,25 @@ body {
     font-weight: 300;
     line-height: 1.8;
     color:black
+}
+main {
+    padding-top: 250px;
+}
+header {
+    width:100%;
+    text-align: center;
+    background-color:#F2B0A1;
+    padding: 10px 0;
+        border: solid #BDBDBD 1px; 
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+        -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+        -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+      position: fixed
+}
+footer {
+    width: 100%;
+    text-align: center;
+    border-top: solid #F2B0A1 2px;
 }
 img {
     width: 100%;
@@ -75,4 +110,39 @@ a.button.contact {
 a.button.contact:hover {
     background-color: #f7d8d1;
     color:#FFFFFF;
+}
+/*layout styling*/
+.row{
+    margin: 25px 0;
+}
+#hero h1 {
+    text-align: center;
+}
+#work h2 {
+    text-align: center;
+}
+#work h3 {
+    text-align: center;
+}
+#work p {
+    text-align: center;
+}
+#about h2 {
+    text-align: center;
+}
+#about h3 {
+    text-align: center;
+}
+.logo{
+    max-width: 250px;
+}
+#project h1 {
+    text-align: center;
+}
+#project h2 {
+    text-align: center;
+}
+nav > ul > li > a {
+    display: inline-block;
+    width: 100%;
 }
