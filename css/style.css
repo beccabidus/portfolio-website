@@ -24,7 +24,7 @@ nav > ul > li > a {
 body {
     background-color: #FFFFFF;
     font-family: 'Epilogue', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.8;
     color:black
@@ -92,7 +92,7 @@ a.button {
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #F2B0A1;
-    transition: 0.2 opacity;
+    transition: 0.2s opacity;
 }
 a.button:hover,
 a.button:focus {
@@ -115,6 +115,24 @@ a.button.contact:hover {
 .row{
     margin: 25px 0;
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-md-6 {
+    width: 50%;
+}
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
 #hero h1 {
     text-align: center;
 }
@@ -132,6 +150,7 @@ a.button.contact:hover {
 }
 #about h3 {
     text-align: center;
+    margin-top: 0;
 }
 .logo{
     max-width: 250px;
@@ -142,7 +161,47 @@ a.button.contact:hover {
 #project h2 {
     text-align: center;
 }
+#hero span {
+    display: block;
+}
 nav > ul > li > a {
     display: inline-block;
     width: 100%;
 }
+/* medium devices */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 40px;
+    }
+    main {
+        padding-top: 150px;
+    }
+    }
+    /* large devices */
+    @media only screen and (min-width: 1024px) {
+    body {font-size: 18px;}
+    }
+    /* x-large devices */
+    @media only screen and (min-width: 1440px) {
+    body {font-size: 18px;}
+    }
+    @keyframes star {
+        from {transform: translate(0px,50px);}
+        to {transform:translate(100px,350px)}
+    }
+    .star {
+        animation: 5s star infinite linear;
+    }
+    @keyframes staroutline {
+        from {transform: translate(0px,50px);}
+        to {transform:translate(100px,350px)}
+    }
+    .staroutline {
+        animation: 5s staroutline infinite linear;
+    }
