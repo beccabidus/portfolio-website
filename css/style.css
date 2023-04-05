@@ -11,9 +11,7 @@ Accent (Sky Blue): #83AAC0
 nav > ul {
     list-style-type: none;
     padding: 0;
-}
-nav > ul > li {
-    display: inline-block;
+    margin: 0;
 }
 nav > ul > li > a {
     padding: 0 15px;
@@ -30,13 +28,12 @@ body {
     color:black
 }
 main {
-    padding-top: 250px;
+    padding-top: 300px;
 }
 header {
     width:100%;
-    text-align: center;
     background-color:#F2B0A1;
-    padding: 10px 0;
+    padding: 10px 0 4px;
         border: solid #BDBDBD 1px; 
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
         -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
@@ -52,10 +49,12 @@ img {
     width: 100%;
 }
 h1 {
+    color:#E67B6C;
     font-size: 2.75em;
     font-weight: 600;
 }
 h2 {
+    color:#E67B6C;
     font-size: 2.25em;
     font-weight: 500;
 }
@@ -64,10 +63,13 @@ h3 {
     font-weight: 500;
 }
 h4 {
+    color:#E67B6C;
     font-size: 1.35em;
     font-weight: 400;
 }
-
+a.icon {
+    color:#E67B6C;
+}
 a {
     color: #E67B6C;
     text-decoration: none;
@@ -134,6 +136,9 @@ a.button.contact:hover {
 }
 
 /*layout styling*/
+.navtoggle li:not(:last-child) {
+    display: none;
+}
 .row{
     margin: 25px 0;
 }
@@ -147,6 +152,15 @@ a.button.contact:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
+}
+.navtoggle li .icon {
+    position: absolute;
+    text-align: right;
+    top: 45px;
+    font-size: 20px;
+}
+.navtoggle, .navtoggle.responsive{
+    position: relative;
 }
 #hero h1 {
     text-align: center;
@@ -169,6 +183,7 @@ a.button.contact:hover {
 #about h3 {
     text-align: center;
     margin-top: 0;
+    padding: 0 0 0 35px;
 }
 #about li {
     text-align: center;
@@ -185,7 +200,7 @@ a.button.contact:hover {
     text-align: center;
 }
 .logo{
-    max-width: 250px;
+    max-width: 200px;
 }
 #project h1 {
     text-align: center;
@@ -200,8 +215,26 @@ nav > ul > li > a {
     display: inline-block;
     width: 100%;
 }
+main {
+    padding-top: 125px;
+}
+.navtoggle.responsive {
+    display: block;
+}
 /* medium devices */
 @media only screen and (min-width: 640px) {
+    nav > ul {
+        margin: 1em 0;
+    }
+    nav > ul > li {
+        display: inline-block;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+    }
     header {
         text-align: unset;
         padding: 20px 0 13px;
@@ -211,6 +244,7 @@ nav > ul > li > a {
         float: right;
         margin-top: 40px;
     }
+
     .col-md-6 {
         width: 50%;
         margin-top: -20px;
@@ -231,6 +265,9 @@ nav > ul > li > a {
     }
     .skills > ul {
         margin: 0;
+    }
+    .logo{
+        max-width: 250px;
     }
     }
     /* large devices */
