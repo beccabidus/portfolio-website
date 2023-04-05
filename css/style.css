@@ -67,6 +67,7 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
+
 a {
     color: #E67B6C;
     text-decoration: none;
@@ -84,6 +85,23 @@ a:active {
     color: #83AAC0;
     text-decoration: none;
 }
+a.social {
+    display: inline-block;
+    background-color: #E67B6C;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #F2B0A1;
+    transition: 0.2s opacity;
+    margin: 15px 0; 
+}
+#contact svg {
+    position:relative;
+     top: 8px;
+     margin-left: 10px;
+     fill: #FFFFFF;
+}
 a.button {
     display: inline-block;
     background-color: #E67B6C;
@@ -93,6 +111,9 @@ a.button {
     border-radius: 3px;
     border-bottom: 2px solid #F2B0A1;
     transition: 0.2s opacity;
+}
+#about a.button {
+    text-align: center;
 }
 a.button:hover,
 a.button:focus {
@@ -111,6 +132,7 @@ a.button.contact:hover {
     background-color: #f7d8d1;
     color:#FFFFFF;
 }
+
 /*layout styling*/
 .row{
     margin: 25px 0;
@@ -119,13 +141,6 @@ a.button.contact:hover {
     content: "";
     clear: both;
     display: table;
-}
-.col-md-6 {
-    width: 50%;
-}
-[class*="col-"] {
-    float: left;
-    padding: 10px;
 }
 .container {
     max-width: 1200px;
@@ -145,12 +160,29 @@ a.button.contact:hover {
 #work p {
     text-align: center;
 }
+#about h1 {
+    text-align: center;
+}
 #about h2 {
     text-align: center;
 }
 #about h3 {
     text-align: center;
     margin-top: 0;
+}
+#about li {
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+#about img {
+    max-width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hero h3 {
+    text-align: center;
 }
 .logo{
     max-width: 250px;
@@ -179,13 +211,77 @@ nav > ul > li > a {
         float: right;
         margin-top: 40px;
     }
+    .col-md-6 {
+        width: 50%;
+        margin-top: -20px;
+    }
+    .col-md-6-project {
+        width: 50%;
+        margin-top: 0 0 32px;
+    }
+    .col-md-12 {
+        width: 100;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
     main {
         padding-top: 150px;
+    }
+    .skills > ul {
+        margin: 0;
     }
     }
     /* large devices */
     @media only screen and (min-width: 1024px) {
     body {font-size: 18px;}
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-4 {
+        width: 41.66%;
+    }
+    .col-lg-7 {
+        width: 50%;
+    }
+    .col-lg-12 {
+        width: 100%;
+        margin-top: -18px;
+    }
+    .col-lg-12-skills {
+        width: 100%;
+        margin-top: -18px;
+        float: left;
+        padding: 0 20px 40px;
+    }
+    .container {
+        max-width: 1200px;
+        padding: 0 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .learnings h4 {
+        margin: 40px 0 0 0;
+        font-weight: 700;
+        font-size: 1.6em;
+    }
+    #project  {
+     font-size: 1.5em;}
+    .project img {
+        padding: 24px 48px;
+    }
+    #hero h3 {
+        font-size: 1.5em;
+    }
+    #about  {
+        text-align: center;
+        padding: 8px 0;
+        margin: 32px 0 16px 0;
+    }
     }
     /* x-large devices */
     @media only screen and (min-width: 1440px) {
