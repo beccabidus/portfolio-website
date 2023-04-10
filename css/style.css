@@ -1,7 +1,7 @@
 /*
 Colors used: 
 Dominant (White): #FFFFFF;
-Supporting 1 (Dark Coral): #E67B6C
+Supporting 1 (Dark Coral): #DA3C26
 Supporting 2 (Light Coral): #F2B0A1
 Accent (Sky Blue): #83AAC0
 */
@@ -49,12 +49,12 @@ img {
     width: 100%;
 }
 h1 {
-    color:#E67B6C;
+    color:#DA3C26;
     font-size: 2.75em;
     font-weight: 600;
 }
 h2 {
-    color:#E67B6C;
+    color:#DA3C26;
     font-size: 2.25em;
     font-weight: 500;
 }
@@ -63,19 +63,19 @@ h3 {
     font-weight: 500;
 }
 h4 {
-    color:#E67B6C;
+    color:#DA3C26;
     font-size: 1.35em;
     font-weight: 400;
 }
 a.icon {
-    color:#E67B6C;
+    color:black;
 }
 a {
-    color: #E67B6C;
+    color: black;
     text-decoration: none;
 }
 a:visited {
-    color: #E67B6C;
+    color: black;
     text-decoration: none;
 }
 a:hover,
@@ -89,12 +89,12 @@ a:active {
 }
 a.social {
     display: inline-block;
-    background-color: #E67B6C;
+    background-color: #DA3C26;
     color: #FFFFFF;
     font-weight: 300;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #F2B0A1;
+    border-bottom: 2px solid #83AAC0;
     transition: 0.2s opacity;
     margin: 15px 0; 
 }
@@ -106,16 +106,14 @@ a.social {
 }
 a.button {
     display: inline-block;
-    background-color: #E67B6C;
+    text-align: center;
+    background-color: #DA3C26;
     color: #FFFFFF;
     font-weight: 300;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #F2B0A1;
+    border-bottom: 2px solid #83AAC0;
     transition: 0.2s opacity;
-}
-#about a.button {
-    text-align: center;
 }
 a.button:hover,
 a.button:focus {
@@ -126,15 +124,18 @@ a.button:active {
 }
 a.button.contact {
     background-color: transparent;
-    color:#E67B6C;
+    color:#DA3C26;
     text-transform: uppercase;
-    border: 2px solid #E67B6C
+    border: 2px solid #DA3C26
 }
 a.button.contact:hover {
     background-color: #f7d8d1;
     color:#FFFFFF;
 }
-
+#about a.button {
+    text-align: center;
+    display: inline-block
+}
 /*layout styling*/
 .navtoggle li:not(:last-child) {
     display: none;
@@ -203,6 +204,10 @@ font-size: 20px;
     text-decoration: none;
     list-style-type: none;
 }
+#about p {
+    margin-right: 50px;
+    margin-left: 50px;
+}
 #about img {
     max-width: 450px;
     display: block;
@@ -254,7 +259,10 @@ main {
         float: right;
         margin-top: 40px;
     }
-
+    #about p {
+        margin-right: 70px;
+        margin-left: 70px;
+    }
     .col-md-6 {
         width: 50%;
         margin-top: -20px;
