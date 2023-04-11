@@ -25,10 +25,11 @@ body {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.8;
-    color:black
+    color:black;
 }
 main {
     padding-top: 300px;
+    text-align: center;
 }
 header {
     width:100%;
@@ -131,6 +132,9 @@ a.button.contact {
 a.button.contact:hover {
     background-color: #f7d8d1;
     color:#FFFFFF;
+}
+.class {
+    text-align: center;
 }
 #about a.button {
     text-align: center;
